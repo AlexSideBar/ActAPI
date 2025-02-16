@@ -9,7 +9,7 @@ import SwiftUI
 import ActAPIFramework
 
 
-@BaseActionMacro
+@BaseAction
 enum MyActions {
     // Adds a todo item to our list of todos
     case addTodo(
@@ -22,7 +22,9 @@ enum MyActions {
         todo_id: String
     )
     
-    // Some examples of actions
+    // Example uses of the enum
+    // Must include all cases!
+    //
     static var allCases: [MyActions] {
         return [
             .addTodo(content: "My cool todo", deadline: Date()),

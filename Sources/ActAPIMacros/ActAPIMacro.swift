@@ -2,7 +2,7 @@ import SwiftCompilerPlugin
 import SwiftSyntax
 import SwiftSyntaxMacros
 
-public struct BaseActionMacro: MemberMacro, ExtensionMacro {
+public struct BaseAction: MemberMacro, ExtensionMacro {
     public static func expansion(
         of node: SwiftSyntax.AttributeSyntax,
         attachedTo declaration: some SwiftSyntax.DeclGroupSyntax,
@@ -37,5 +37,5 @@ public struct BaseActionMacro: MemberMacro, ExtensionMacro {
 
 @main
 struct ActAPIFrameworkPlugin: CompilerPlugin {
-    let providingMacros: [Macro.Type] = [BaseActionMacro.self]
+    let providingMacros: [Macro.Type] = [BaseAction.self]
 }
