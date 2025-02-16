@@ -1,5 +1,5 @@
 
-<img src="https://github.com/user-attachments/assets/10d9c13e-89a0-4b79-ba11-f07b1ea5fa69" width=128>
+<img src="https://github.com/user-attachments/assets/10d9c13e-89a0-4b79-ba11-f07b1ea5fa69" width=100>
 
 # ActAPI
 
@@ -12,7 +12,15 @@ https://github.com/user-attachments/assets/ee063337-f3f3-4b00-b770-405c90d64ef5
 
 > Check the [Examples](./Examples/) directory for a TodoList app that uses voice intents.
 
-### Pt. 1: Actions
+
+### Pt. 1: Installation
+
+Add the `ActAPIFramework` package via SPM:
+
+`https://github.com/AlexSideBar/ActAPI`
+
+
+### Pt. 2: Define Actions
 
 ActAPI uses enums to define actions for your app. Here's an example:
 
@@ -47,7 +55,7 @@ enum MyActions {
 ...
 ```
 
-### Pt. 2: Start / End Recordings
+### Pt. 3: Start / End Recordings
 
 Then, all you have to do is execute two functions: `actor.startRecording()` and `actor.endRecord()`. We handle the audio recordings for you.
 
