@@ -1,0 +1,6 @@
+framework module ActAPIXCFramework {
+  umbrella header "ActAPIXCFramework.h"
+  export *
+
+  module * { export * }
+}

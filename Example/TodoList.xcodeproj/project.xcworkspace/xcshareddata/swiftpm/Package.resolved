@@ -1,0 +1,15 @@
+{
+  "originHash" : "c51061b60eb1aec7e3d40ff9387b45b6f996c3217ffacf41f00a48ab780b463c",
+  "pins" : [
+    {
+      "identity" : "swift-syntax-pruned",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/DanielEdrisian/swift-syntax-pruned.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "ef9256f6c0145d293e49c7ca88b46336e52b8205"
+      }
+    }
+  ],
+  "version" : 3
+}

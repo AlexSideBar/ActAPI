@@ -1,0 +1,37 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
+// swift-module-flags: -target arm64-apple-macos15.1 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name ActAPIXCFramework
+import AVFoundation
+@_exported import ActAPIXCFramework
+import Combine
+import Foundation
+import Swift
+import SwiftUI
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import os.log
+import os
+public protocol BaseAction : Swift.CaseIterable, Swift.Decodable, Swift.Encodable, Swift.Equatable {
+  static var desc: Swift.String { get }
+}
+@_Concurrency.MainActor final public class ActAPI<T> : Foundation.ObservableObject, Swift.Sendable where T : ActAPIXCFramework.BaseAction {
+  @Combine.Published @_projectedValueProperty($isRecording) @_Concurrency.MainActor final public var isRecording: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor final public var $isRecording: Combine.Published<Swift.Bool>.Publisher {
+    get
+  }
+  @Combine.Published @_projectedValueProperty($isTranscribing) @_Concurrency.MainActor final public var isTranscribing: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor final public var $isTranscribing: Combine.Published<Swift.Bool>.Publisher {
+    get
+  }
+  @_Concurrency.MainActor public init(apiKey: Swift.String)
+  @_Concurrency.MainActor final public func startRecording() throws
+  @_Concurrency.MainActor final public func endRecord(additionalContext: Swift.String = "") async throws -> [T]
+  @_Concurrency.MainActor final public func cancelRecording()
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}

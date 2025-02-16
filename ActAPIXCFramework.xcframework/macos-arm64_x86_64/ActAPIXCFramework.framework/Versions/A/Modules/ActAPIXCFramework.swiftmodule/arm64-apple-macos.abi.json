@@ -1,0 +1,602 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "ActAPIXCFramework",
+    "printedName": "ActAPIXCFramework",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ActAPIXCFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "ActAPIXCFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "ActAPIXCFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "ActAPIXCFramework",
+        "declAttributes": [
+          "Preconcurrency"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BaseAction",
+        "printedName": "BaseAction",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "desc",
+            "printedName": "desc",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17ActAPIXCFramework10BaseActionP4descSSvpZ",
+            "mangledName": "$s17ActAPIXCFramework10BaseActionP4descSSvpZ",
+            "moduleName": "ActAPIXCFramework",
+            "static": true,
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17ActAPIXCFramework10BaseActionP4descSSvgZ",
+                "mangledName": "$s17ActAPIXCFramework10BaseActionP4descSSvgZ",
+                "moduleName": "ActAPIXCFramework",
+                "genericSig": "<τ_0_0 where τ_0_0 : ActAPIXCFramework.BaseAction>",
+                "sugared_genericSig": "<Self where Self : ActAPIXCFramework.BaseAction>",
+                "static": true,
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:17ActAPIXCFramework10BaseActionP",
+        "mangledName": "$s17ActAPIXCFramework10BaseActionP",
+        "moduleName": "ActAPIXCFramework",
+        "genericSig": "<τ_0_0 : Swift.CaseIterable, τ_0_0 : Swift.Decodable, τ_0_0 : Swift.Encodable, τ_0_0 : Swift.Equatable>",
+        "sugared_genericSig": "<Self : Swift.CaseIterable, Self : Swift.Decodable, Self : Swift.Encodable, Self : Swift.Equatable>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ActAPI",
+        "printedName": "ActAPI",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "isRecording",
+            "printedName": "isRecording",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17ActAPIXCFramework0A3APIC11isRecordingSbvp",
+            "mangledName": "$s17ActAPIXCFramework0A3APIC11isRecordingSbvp",
+            "moduleName": "ActAPIXCFramework",
+            "declAttributes": [
+              "Final",
+              "Custom",
+              "ProjectedValueProperty",
+              "SetterAccess",
+              "AccessControl",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17ActAPIXCFramework0A3APIC11isRecordingSbvg",
+                "mangledName": "$s17ActAPIXCFramework0A3APIC11isRecordingSbvg",
+                "moduleName": "ActAPIXCFramework",
+                "genericSig": "<τ_0_0 where τ_0_0 : ActAPIXCFramework.BaseAction>",
+                "sugared_genericSig": "<T where T : ActAPIXCFramework.BaseAction>",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "$isRecording",
+            "printedName": "$isRecording",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Publisher",
+                "printedName": "Combine.Published<Swift.Bool>.Publisher",
+                "usr": "s:7Combine9PublishedV9PublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17ActAPIXCFramework0A3APIC12$isRecording7Combine9PublishedV9PublisherVySb_Gvp",
+            "mangledName": "$s17ActAPIXCFramework0A3APIC12$isRecording7Combine9PublishedV9PublisherVySb_Gvp",
+            "moduleName": "ActAPIXCFramework",
+            "implicit": true,
+            "declAttributes": [
+              "Final",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<Swift.Bool>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17ActAPIXCFramework0A3APIC12$isRecording7Combine9PublishedV9PublisherVySb_Gvg",
+                "mangledName": "$s17ActAPIXCFramework0A3APIC12$isRecording7Combine9PublishedV9PublisherVySb_Gvg",
+                "moduleName": "ActAPIXCFramework",
+                "genericSig": "<τ_0_0 where τ_0_0 : ActAPIXCFramework.BaseAction>",
+                "sugared_genericSig": "<T where T : ActAPIXCFramework.BaseAction>",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isTranscribing",
+            "printedName": "isTranscribing",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17ActAPIXCFramework0A3APIC14isTranscribingSbvp",
+            "mangledName": "$s17ActAPIXCFramework0A3APIC14isTranscribingSbvp",
+            "moduleName": "ActAPIXCFramework",
+            "declAttributes": [
+              "Final",
+              "Custom",
+              "ProjectedValueProperty",
+              "SetterAccess",
+              "AccessControl",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17ActAPIXCFramework0A3APIC14isTranscribingSbvg",
+                "mangledName": "$s17ActAPIXCFramework0A3APIC14isTranscribingSbvg",
+                "moduleName": "ActAPIXCFramework",
+                "genericSig": "<τ_0_0 where τ_0_0 : ActAPIXCFramework.BaseAction>",
+                "sugared_genericSig": "<T where T : ActAPIXCFramework.BaseAction>",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "$isTranscribing",
+            "printedName": "$isTranscribing",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Publisher",
+                "printedName": "Combine.Published<Swift.Bool>.Publisher",
+                "usr": "s:7Combine9PublishedV9PublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17ActAPIXCFramework0A3APIC15$isTranscribing7Combine9PublishedV9PublisherVySb_Gvp",
+            "mangledName": "$s17ActAPIXCFramework0A3APIC15$isTranscribing7Combine9PublishedV9PublisherVySb_Gvp",
+            "moduleName": "ActAPIXCFramework",
+            "implicit": true,
+            "declAttributes": [
+              "Final",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<Swift.Bool>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17ActAPIXCFramework0A3APIC15$isTranscribing7Combine9PublishedV9PublisherVySb_Gvg",
+                "mangledName": "$s17ActAPIXCFramework0A3APIC15$isTranscribing7Combine9PublishedV9PublisherVySb_Gvg",
+                "moduleName": "ActAPIXCFramework",
+                "genericSig": "<τ_0_0 where τ_0_0 : ActAPIXCFramework.BaseAction>",
+                "sugared_genericSig": "<T where T : ActAPIXCFramework.BaseAction>",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(apiKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ActAPI",
+                "printedName": "ActAPIXCFramework.ActAPI<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:17ActAPIXCFramework0A3APIC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17ActAPIXCFramework0A3APIC6apiKeyACyxGSS_tcfc",
+            "mangledName": "$s17ActAPIXCFramework0A3APIC6apiKeyACyxGSS_tcfc",
+            "moduleName": "ActAPIXCFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : ActAPIXCFramework.BaseAction>",
+            "sugared_genericSig": "<T where T : ActAPIXCFramework.BaseAction>",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "startRecording",
+            "printedName": "startRecording()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17ActAPIXCFramework0A3APIC14startRecordingyyKF",
+            "mangledName": "$s17ActAPIXCFramework0A3APIC14startRecordingyyKF",
+            "moduleName": "ActAPIXCFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : ActAPIXCFramework.BaseAction>",
+            "sugared_genericSig": "<T where T : ActAPIXCFramework.BaseAction>",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "endRecord",
+            "printedName": "endRecord(additionalContext:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[τ_0_0]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17ActAPIXCFramework0A3APIC9endRecord17additionalContextSayxGSS_tYaKF",
+            "mangledName": "$s17ActAPIXCFramework0A3APIC9endRecord17additionalContextSayxGSS_tYaKF",
+            "moduleName": "ActAPIXCFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : ActAPIXCFramework.BaseAction>",
+            "sugared_genericSig": "<T where T : ActAPIXCFramework.BaseAction>",
+            "declAttributes": [
+              "Final",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cancelRecording",
+            "printedName": "cancelRecording()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17ActAPIXCFramework0A3APIC15cancelRecordingyyF",
+            "mangledName": "$s17ActAPIXCFramework0A3APIC15cancelRecordingyyF",
+            "moduleName": "ActAPIXCFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : ActAPIXCFramework.BaseAction>",
+            "sugared_genericSig": "<T where T : ActAPIXCFramework.BaseAction>",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:17ActAPIXCFramework0A3APIC",
+        "mangledName": "$s17ActAPIXCFramework0A3APIC",
+        "moduleName": "ActAPIXCFramework",
+        "genericSig": "<τ_0_0 where τ_0_0 : ActAPIXCFramework.BaseAction>",
+        "sugared_genericSig": "<T where T : ActAPIXCFramework.BaseAction>",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "Custom"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ObservableObject",
+            "printedName": "ObservableObject",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ObjectWillChangePublisher",
+                "printedName": "ObjectWillChangePublisher",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObservableObjectPublisher",
+                    "printedName": "Combine.ObservableObjectPublisher",
+                    "usr": "s:7Combine25ObservableObjectPublisherC"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7Combine16ObservableObjectP",
+            "mangledName": "$s7Combine16ObservableObjectP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ActAPIXCFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ActAPIXCFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "os.log",
+        "printedName": "os.log",
+        "declKind": "Import",
+        "moduleName": "ActAPIXCFramework"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/danieledrisian\/Desktop\/ActAPI\/ActAPIXCFramework\/ActAPIXCFramework\/ActAPI.swift",
+      "kind": "BooleanLiteral",
+      "offset": 399,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/danieledrisian\/Desktop\/ActAPI\/ActAPIXCFramework\/ActAPIXCFramework\/ActAPI.swift",
+      "kind": "BooleanLiteral",
+      "offset": 461,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/danieledrisian\/Desktop\/ActAPI\/ActAPIXCFramework\/ActAPIXCFramework\/ActAPI.swift",
+      "kind": "StringLiteral",
+      "offset": 588,
+      "length": 31,
+      "value": "\"https:\/\/act-api.alexcodes.app\""
+    },
+    {
+      "filePath": "\/Users\/danieledrisian\/Desktop\/ActAPI\/ActAPIXCFramework\/ActAPIXCFramework\/ActAPI.swift",
+      "kind": "StringLiteral",
+      "offset": 1221,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/danieledrisian\/Desktop\/ActAPI\/ActAPIXCFramework\/ActAPIXCFramework\/ActAPI.swift",
+      "kind": "StringLiteral",
+      "offset": 7708,
+      "length": 2,
+      "value": "\"\""
+    }
+  ]
+}
