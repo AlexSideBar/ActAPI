@@ -10,7 +10,7 @@ https://github.com/user-attachments/assets/ee063337-f3f3-4b00-b770-405c90d64ef5
 
 ## Quickstart
 
-> Check the [Examples](./Examples/) directory for a TodoList app that uses voice intents.
+> Check the [Examples](./Example/) directory for a TodoList app that uses voice intents.
 
 
 ### Pt. 1: Installation
